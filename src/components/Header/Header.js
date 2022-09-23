@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import { BREAKPOINTS, COLORS, WEIGHTS } from '../../constants';
+import { BREAKPOINTS, COLORS } from '../../constants';
 import Logo from '../Logo';
 import SuperHeader from '../SuperHeader';
 import MobileMenu from '../MobileMenu';
 import Icon from '../Icon';
+import NavLink from '../NavLink';
 import UnstyledButton from '../UnstyledButton/UnstyledButton';
 
 const Header = () => {
@@ -99,18 +100,6 @@ const ResponsiveSide = styled.div`
 
   ${BREAKPOINTS.tabletAndDown} {
     display: none;
-  }
-`;
-
-const NavLink = styled.a`
-  font-size: 1.125rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: ${COLORS.gray[900]};
-  font-weight: ${WEIGHTS.medium};
-
-  &:first-of-type {
-    color: ${COLORS.secondary};
   }
 `;
 
