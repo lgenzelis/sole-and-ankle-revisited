@@ -25,7 +25,7 @@ const Main = styled.main`
     padding: 48px 32px;
   }
 
-  ${BREAKPOINTS.phone} {
+  ${BREAKPOINTS.phone} {n
     padding: 48px 16px;
   }
 `;
