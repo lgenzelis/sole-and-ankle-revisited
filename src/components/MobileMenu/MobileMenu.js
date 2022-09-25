@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import { DialogOverlay, DialogContent } from '@reach/dialog';
 
-import { COLORS } from '../../constants';
-
 import UnstyledButton from '../UnstyledButton';
 import Icon from '../Icon';
 import VisuallyHidden from '../VisuallyHidden';
@@ -60,7 +58,8 @@ const StyledDialogOverlay = styled(DialogOverlay)`
   bottom: 0;
   right: 0;
   left: 0;
-  background: hsla(220, 5%, 40%, 0.8);
+  //background: hsla(220, 5%, 40%, 0.8);
+  background: var(--gray-700-translucent);
 `;
 
 const StyledDialogContent = styled(DialogContent)`
@@ -71,7 +70,7 @@ const StyledDialogContent = styled(DialogContent)`
   left: 20%;
   display: flex;
   flex-direction: column;
-  background: ${COLORS.white};
+  background: var(--white);
   padding: 32px;
 `;
 
@@ -88,7 +87,7 @@ const Footer = styled.footer`
 
 const FooterLink = styled.a`
   text-decoration: none;
-  color: ${COLORS.gray[700]};
+  color: var(--gray-700);
   font-size: ${14 / 16}rem;
   
   :first-child {

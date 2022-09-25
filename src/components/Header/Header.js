@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import { BREAKPOINTS, COLORS } from '../../constants';
+import { BREAKPOINTS } from '../../constants';
 import Logo from '../Logo';
 import SuperHeader from '../SuperHeader';
 import MobileMenu from '../MobileMenu';
@@ -55,11 +55,11 @@ const MainHeader = styled.div`
   align-items: baseline;
   padding: 18px var(--spacing);
   height: 72px;
-  border-bottom: 1px solid ${COLORS.gray[300]};
+  border-bottom: 1px solid var(--gray-300);
   overflow: auto;
 
   ${BREAKPOINTS.tabletAndDown} {
-    border-top: 4px solid ${COLORS.gray[900]};
+    border-top: 4px solid var(--gray-900);
     align-items: center;
   }
 
